@@ -1,0 +1,110 @@
+// ...existing code...
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brutus Traias Country</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="imagens/marca.JPG" alt="Brutus Traias Country" class="logo">
+            <h1>TRAÍAS · ACESSÓRIOS · MODA COUNTRY · ARREIOS</h1>
+
+            <!-- botão do carrinho -->
+            <button class="cart-btn" aria-label="Carrinho de compras" title="Carrinho" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6h15l-1.5 9h-11L6 6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="10" cy="20" r="1.6" fill="currentColor"/>
+                    <circle cx="18" cy="20" r="1.6" fill="currentColor"/>
+                </svg>
+                <span class="cart-badge" aria-live="polite">0</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <aside class="menu-lateral">
+            <h2>VARIEDADES</h2>
+            <ul>
+                <li data-filter="all" class="destaque" role="button" tabindex="0">TODOS</li>
+                <li data-filter="camisas" role="button" tabindex="0">CAMISAS</li>
+                <li data-filter="chapeus" role="button" tabindex="0">CHAPÉUS</li>
+                <li data-filter="calcas" role="button" tabindex="0">CALÇAS</li>
+                <li data-filter="botas" role="button" tabindex="0">BOTAS/BUTINAS</li>
+                <li data-filter="arreios" role="button" tabindex="0">ARREIOS</li>
+                <li data-filter="canivetes" role="button" tabindex="0">CANIVETES</li>
+                <li data-filter="fivelas" role="button" tabindex="0">FIVELAS</li>
+                <li data-filter="freios" role="button" tabindex="0">FREIOS</li>
+            </ul>
+            <div class="promo">
+                <img src="imagens/camisaMaquisa.JPG" alt="Fivela" class="fivela">
+                <div class="promo-texto">
+                    <span>PROMOÇÃO</span>
+                    <strong>50%<br>OFF</strong>
+                </div>
+            </div>
+        </aside>
+        <section class="produtos">
+            <div class="card" data-category="camisas">
+                <div class="card-header">MULADEIROS</div>
+                <img src="imagens/camisaMaquisa.JPG" alt="Camisa Muladeiros">
+                <div class="card-desc">CAMISA MULADEIROS</div>
+                <div class="card-preco">49,99</div>
+                <button class="btn-comprar" data-name="Camisa Muladeiros" type="button">Comprar</button>
+            </div>
+            <div class="card" data-category="arreios">
+                <div class="card-header">ARREIO</div>
+                <img src="imagens/prom2.JPG" alt="Calça Carpinteiro">
+                <div class="card-desc">ARREIO CUTUCO 100% COURO</div>
+                <div class="card-preco">1259,99</div>
+                <button class="btn-comprar" data-name="Arreio Cutuco" type="button">Comprar</button>
+            </div>
+            <div class="card" data-category="botas">
+                <div class="card-header">BOIADEIROS</div>
+                <img src="imagens/promo1.JPG" alt="Bota Texana Moiaadeiros">
+                <div class="card-desc">BOTA TEXANA MOIADEIROS</div>
+                <div class="card-preco">380,00</div>
+                <button class="btn-comprar" data-name="Bota Texana" type="button">Comprar</button>
+            </div>
+            <div class="card" data-category="calcas">
+                <div class="card-header">RADADE</div>
+                <img src="imagens/CALÇA.jpg" alt="Camisa TXC">
+                <div class="card-desc">CALÇA CARPINTEIRO</div>
+                <div class="card-preco">59,99</div>
+                <button class="btn-comprar" data-name="Calça Carpinteiro" type="button">Comprar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="imagens/marca.JPG" alt="Brutus Traias Country" class="logo-footer">
+        <p>GABRIEL & NICOLAS</p>
+    </footer>
+
+    <!-- Modal do carrinho -->
+    <div class="cart-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="cart-overlay" data-close></div>
+        <div class="cart-panel" role="document">
+            <header class="cart-panel-header">
+                <h3>Seu carrinho</h3>
+                <button class="cart-close" aria-label="Fechar">✕</button>
+            </header>
+            <div class="cart-body">
+                <ul class="cart-items" aria-live="polite"></ul>
+                <p class="cart-empty">Seu carrinho está vazio.</p>
+            </div>
+            <footer class="cart-panel-footer">
+                <div class="cart-summary">Total de itens: <span class="cart-total">0</span></div>
+                <div class="cart-actions">
+                    <button class="btn-clear" type="button">Limpar carrinho</button>
+                    <button class="btn-checkout" type="button">Finalizar compra</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+// ...existing code...
